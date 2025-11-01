@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yuying’s Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Yuying’s Web</h1>
+    <p class="subtitle">林育穎 | 輔仁大學 | 彈吉他・聽音樂・畫圖</p>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>關於我</h2>
+      <p>嗨！我是林育穎，目前就讀輔仁大學。我喜歡彈吉他、聽音樂與畫圖，也正在學習前端網頁設計，希望未來能用網頁創造更多有趣的作品。</p>
+      <button id="toggle-about" class="btn">更多介紹</button>
+      <div id="about-more" class="hidden">
+        <p>這個網站是我在學習 HTML、CSS、JavaScript、jQuery 和 Ajax 時所建立的個人頁面。希望透過這次作業，能更熟悉網站開發的流程。</p>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>我正在學習的技能</h2>
+      <ul id="skill-list">
+        <li>HTML5</li>
+        <li>CSS (Flexbox)</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Ajax / JSON</li>
+      </ul>
+      <button id="add-skill" class="btn">加入新技能</button>
+    </section>
+
+    <section id="quote" class="card">
+      <h2>隨機中文引言 (Ajax 範例)</h2>
+      <div id="quote-area">
+        <p id="quote-text">點擊下方按鈕即可取得一句隨機中文引言。</p>
+      </div>
+      <button id="get-quote" class="btn">取得引言</button>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>小作品</h2>
+      <ol>
+        <li>Yuying’s Web (個人網站)</li>
+        <li>網頁互動練習</li>
+        <li>AJAX 引言抓取</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>部署到 GitHub Pages：yourusername.github.io</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
